@@ -166,13 +166,12 @@ body {
 }
 
 .toggle:checked ~ .panel {
-  width: 420px;               /* expand width-wise when opened */
-  max-height: 480px;         /* allow content to be visible */
+  width: 420px;
+  max-height: 480px;
   padding: 10px;
   opacity: 1;
 }
 
-/* smaller menu item text (compact like the example) */
 .item {
   display: flex;
   align-items: center;
@@ -209,12 +208,10 @@ body {
   text-underline-offset: 3px;
 }
 
-/* Expand the whole pill when menu is opened (uses :has, supported in modern browsers) */
 .pill:has(.toggle:checked) {
   width: 440px;
 }
 
-/* Experience Section - Two column layout */
 .exp-section {
   display: grid;
   grid-template-columns: 120px 1fr;
