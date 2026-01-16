@@ -23,11 +23,14 @@ body {
   margin: 0;
   font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
   color: var(--text);
-  background: #fff;
+  background: transparent;
 }
 
 .content {
   padding: 120px 24px 120px 60px;
+  background: #fff;
+  transform-origin: center top;
+  will-change: transform, margin, border-radius;
 }
 .content section {
   height: auto;
@@ -260,4 +263,64 @@ body {
 .exp-date {
   font-size: 12px;
   color: var(--muted);
+}
+
+.footer {
+  background: var(--blue);
+  color: #fff;
+  padding: 80px 60px;
+  min-height: 50vh;
+}
+
+.footer-content {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.footer-heading {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 40px 0;
+  color: #fff;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-label {
+  font-size: 16px;
+  font-weight: 400;
+  min-width: 80px;
+  color: #fff;
+}
+
+.contact-value {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  flex: 1;
+}
+
+.contact-icon {
+  font-size: 16px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.contact-icon:hover {
+  opacity: 1;
 }
