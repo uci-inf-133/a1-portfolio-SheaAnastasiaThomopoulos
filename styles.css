@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+html {
+  background: #0b5cff;
+}
+
 body {
   margin: 0;
   font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
