@@ -1,32 +1,96 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu Pill</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<!--
-WRITTEN BY: Shea Thmopoulos
-EMAIL: Sthomopo@uci.edu
--->
+  <body>
+    <nav class="pill" aria-label="Site menu">
+      <input class="toggle" type="checkbox" id="menuToggle" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="author" content="Shea Thmopoulos">
-  <meta name="description" content="Shea's Portfolio">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shea's Portfolio</title>
+      <a class="brand" href="#" aria-label="Home">
+        ST
+      </a>
 
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <section class="hero">
-    <h1 class="hero-title">SHEA'S<br>PORTFOLIO</h1>
-    <nav class="hero-nav" role="navigation" aria-label="Main navigation">
-      <a href="about.html">ABOUT ME</a>
-      <a href="contact.html">CONTACT ME</a>
-      <a href="works.html">WORKS</a>
+      <!-- Right button (label toggles checkbox) -->
+      <label class="btn" for="menuToggle">
+        <span class="btn-menu">Menu</span>
+        <span class="btn-close">Close</span>
+      </label>
+
+      <!-- Dropdown -->
+      <div class="panel" role="menu" aria-label="Menu links">
+        <a class="item" role="menuitem" href="#intro">
+          <span>Intro</span>
+        </a>
+        <a class="item" role="menuitem" href="#experiences">
+          <span>Experiences</span>
+        </a>
+        <a class="item" role="menuitem" href="#writings">
+          <span>Writings</span>
+        </a>
+        <a class="item" role="menuitem" href="#bookshelf">
+          <span>Bookshelf</span>
+        </a>
+        <a class="item" role="menuitem" href="#contact">
+          <span>Contact</span>
+        </a>
+      </div>
     </nav>
-  </section>
 
-  <footer class="page-footer">
-    <a href="http://validator.w3.org/check?uri=referer">W3C validator</a>
-  </footer>
-</body>
+    <!-- Content -->
+    <main class="content">
+      <section id="intro">
+        <h1><span class="blue-italic">Shea Thomopoulos</span>'s Portfolio</h1>        
+        <p>I'm an undergraduate Computer Science student at UC Irvine, focusing on Intelligent Systems. Growing up with dyslexia showed me how powerful digital tools can be for people with disabilities but only when they're designed thoughtfully. I'm interested in bridging the gap between software engineering and accessibility, and I plan to pursue graduate studies in Human-Computer Interaction (HCI).</p>
+
+        <p>Outside of work, I run. I have sucesfully run two marathons, the most recent one being the <a href="#" class="link">Long Beach Marathon</a>. Now I am training for my first <a href="#" class="link">IRONMAN 70.3</a>, if you have any tips for race day let me know.</p>
+
+        <p>Check out more below.</p>
+      </section>
+
+      <section id="experiences" class="exp-section">
+        <div class="exp-label">Experience</div>
+        <div class="exp-content">
+          <div class="exp-item">
+            <div class="exp-company">UI/UX and Web Developer - UC Irvine OAI Website</div>
+            <div class="exp-date">10/2025 - Present</div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-company">Researcher and Designer - INSite Lab (UC Irvine)</div>
+            <div class="exp-date">07/2025 - Present</div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-company">Lab Assistant - ICS 31 (Intro to Programming, Python)</div>
+            <div class="exp-date">06/2025 - Present</div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-company">Corporate Outreach and Organizer — Hack@UCI</div>
+            <div class="exp-date">04/2025 - Present</div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-company">Operations Crew Lead - Bren Event Center</div>
+            <div class="exp-date">11/2023 - Present</div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-company">Event Coordinator and Content Developer - Girl's Coding Weekend</div>
+            <div class="exp-date">11/2022 - 06/2023</div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-company">Python Coding Teacher - International School of Lausanne</div>
+            <div class="exp-date">11/2021 - 06/2022</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
