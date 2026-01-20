@@ -13,7 +13,7 @@
       <input class="toggle" type="checkbox" id="menuToggle" />
 
       <a class="brand" href="#" aria-label="Home">
-        ST
+        ST.
       </a>
 
       <label class="btn" for="menuToggle">
@@ -28,11 +28,8 @@
         <a class="item" role="menuitem" href="#experiences">
           <span>Experiences</span>
         </a>
-        <a class="item" role="menuitem" href="#writings">
-          <span>Writings</span>
-        </a>
-        <a class="item" role="menuitem" href="#bookshelf">
-          <span>Bookshelf</span>
+        <a class="item" role="menuitem" href="#projects">
+          <span>Projects</span>
         </a>
         <a class="item" role="menuitem" href="#contact">
           <span>Contact</span>
@@ -90,6 +87,26 @@
         </div>
       </section>
 
+      <section id="projects" class="exp-section">
+        <div class="exp-label">Projects</div>
+        <div class="exp-content">
+          <div class="exp-item">
+            <div class="exp-company project-title" data-project="0">DFS Visualizer</div>
+            <div class="exp-date">June 21, 2025</div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-company project-title" data-project="1">Racing Agents (CarRacing-v3)</div>
+            <div class="exp-date">December 1, 2025</div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-company project-title" data-project="2">WebReg Redesign</div>
+            <div class="exp-date">December 1, 2025</div>
+          </div>
+        </div>
+      </section>
+
       
     </main>
 
@@ -112,6 +129,20 @@
         </div>
       </div>
     </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">×</button>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-date" id="modalDate"></div>
+        <div class="modal-description" id="modalDescription"></div>
+        <div class="modal-tech" id="modalTech"></div>
+        <div class="modal-links" id="modalLinks"></div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
