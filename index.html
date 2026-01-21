@@ -1,16 +1,23 @@
 <!doctype html>
 <html lang="en">
+
+<!--
+WRITTEN BY: Shea Thomopoulos
+EMAIL: sthomopo@uci.edu
+-->
+
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b5cff" />
-    <title>Shea Thomopoulos - Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8">
+    <meta name="author" content="Shea Thomopoulos">
+    <meta name="description" content="My personal portfolio website showcasing my experiences and projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Shea Thomopoulos' Portfolio</title>
+    <link rel="stylesheet" href="styles.css"/>
   </head>
 
   <body>
     <nav class="pill" aria-label="Site menu">
-      <input class="toggle" type="checkbox" id="menuToggle" />
+      <input class="toggle" type="checkbox" id="menuToggle"/>
 
       <a class="brand" href="#" aria-label="Home">
         ST.
@@ -48,7 +55,7 @@
       </section>
 
       <section id="experiences" class="exp-section">
-        <div class="exp-label">Experience</div>
+        <h2 class="exp-label">Experience</h2>
         <div class="exp-content">
           <div class="exp-item">
             <div class="exp-company">UI/UX and Web Developer - UC Irvine OAI Website</div>
@@ -88,7 +95,7 @@
       </section>
 
       <section id="projects" class="exp-section">
-        <div class="exp-label">Projects</div>
+        <h2 class="exp-label">Projects</h2>
         <div class="exp-content">
           <div class="exp-item">
             <div class="exp-company project-title" data-project="0">DFS Visualizer</div>
@@ -129,8 +136,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- Project Modal -->
     <div id="projectModal" class="modal">
       <div class="modal-overlay"></div>
       <div class="modal-content">
@@ -142,7 +147,7 @@
         <div class="modal-links" id="modalLinks"></div>
       </div>
     </div>
-
+    <a href="https://validator.w3.org/check?uri=referer">W3C validator</a>
     <script src="script.js"></script>
   </body>
 </html>
