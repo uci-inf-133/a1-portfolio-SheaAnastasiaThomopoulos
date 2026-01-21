@@ -1,4 +1,4 @@
---Readme document for *YOUR NAME*, *YOUR_EMAIL@uci.edu*--
+--Readme document for *Shea Thomopoulos*, *sthomopo@uci.edu*--
 
 A reminder on academic integrity, as described in the syllabus.
 
@@ -10,45 +10,49 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/10
-- */1 Readme
-- */2 Basic HTML content
-- */1 Basic CSS styling
-- */1 Advanced feature
-- */2 Responsive layout
-- */1 Passes validation checks
-- */2 Embraces spirit of the assignment
+10/10
+- 1/1 Readme
+- 2/2 Basic HTML content
+- 1/1 Basic CSS styling
+- 1/1 Advanced feature
+- 2/2 Responsive layout
+- 1/1 Passes validation checks
+- 2/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
-
-
+- Appropriate use of semantic HTML elements (like nav, main, section, footer)
+- Clear heading hierarchy using h1 and h2 elements 
+- Paragraph text describing background, experience, and projects
+- External links (LinkedIn, email, resume)
+- Structured navigation linking to different sections of the page
 
 (b) CSS features
-
-
+- Custom spacing using margines and padding to imporve readability and layout 
+- Define color palette using CSS variable
+- Custom typoghraphy using a Google Font with appropriate fallbacks 
+- Hover and focus styles for interactive elements 
+- Responsive layout adjustments using media queries
 
 (c) Advanced features
-
-
-
+- Custom interactive navigation bar with expandable menu 
+- Modal dialog for project details with dynamic content populated via JavaScript 
+- State based styling using adcanced CSS selectors (:checked...)
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
 
 
 
 4. How long, in hours, did it take you to complete this assignment?
-
-
+I worked on and off the project for a period of 4 days, I averaged about 3 hours a day coming to a total of about 12 hours of design, implementation, debugging, validation and accessibility review. 
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
 
 
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-
-
+I did not consult classmates or other individuals directly for code.
 
 7. Is there anything special we need to know in order to run your code?
-
+No. The project consists of standard HTML, CSS, and JavaScript files and can be run by opening index.html in a modern web browser.

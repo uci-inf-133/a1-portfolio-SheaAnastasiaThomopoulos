@@ -5,7 +5,7 @@
   --panel-bg: rgba(243, 246, 251, 0.88);
   --text: #2f3747;
   --muted: #7b859a;
-  --blue: #0b5cff;
+  --blue: #636B2F;
   --shadow: 0 12px 30px rgba(18, 26, 46, 0.16);
   --shadow-soft: 0 6px 16px rgba(18, 26, 46, 0.12);
 }
@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 html {
-  background: #0b5cff;
+  background: #636B2F;
 }
 body {
   margin: 0;
@@ -97,6 +97,13 @@ body {
 }
 .brand-dot {
   color: var(--text);
+}
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
 }
 .btn {
   display: inline-flex;
@@ -418,4 +425,17 @@ body {
   #badge-container {
     display: none;
   }
+}
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background: #fff;
+  color: #000;
+  padding: 10px 12px;
+  border-radius: 8px;
+  z-index: 10000;
+}
+.skip-link:focus {
+  left: 10px;
 }
