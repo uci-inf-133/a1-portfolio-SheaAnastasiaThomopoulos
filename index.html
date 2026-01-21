@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <!--
 WRITTEN BY: Shea Thomopoulos
@@ -16,8 +16,9 @@ EMAIL: sthomopo@uci.edu
   </head>
 
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <nav class="pill" aria-label="Site menu">
-      <input class="toggle" type="checkbox" id="menuToggle">
+      <input class="toggle" type="checkbox" id="menuToggle" aria-label="Toggle site menu">
 
       <a class="brand" href="#" aria-label="Home">
         ST.
@@ -28,28 +29,22 @@ EMAIL: sthomopo@uci.edu
         <span class="btn-close">Close</span>
       </label>
 
-      <div class="panel" role="menu" aria-label="Menu links">
-        <a class="item" role="menuitem" href="#intro">
-          <span>Intro</span>
-        </a>
-        <a class="item" role="menuitem" href="#experiences">
-          <span>Experiences</span>
-        </a>
-        <a class="item" role="menuitem" href="#projects">
-          <span>Projects</span>
-        </a>
-        <a class="item" role="menuitem" href="#contact">
-          <span>Contact</span>
-        </a>
+      <div class="panel" aria-label="Menu links">
+        <ul class="menu-list">
+          <li><a class="item" href="#intro">Intro</a></li>
+          <li><a class="item" href="#experiences">Experiences</a></li>
+          <li><a class="item" href="#projects">Projects</a></li>
+          <li><a class="item" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </nav>
 
-    <main class="content">
+    <main id="main" class="content">
       <section id="intro">
         <h1><span class="blue-italic">Shea Thomopoulos</span>'s Portfolio</h1>        
         <p>I'm an undergraduate Computer Science student at UC Irvine, focusing on Intelligent Systems. Growing up with dyslexia showed me how powerful digital tools can be for people with disabilities but only when they're designed thoughtfully. I'm interested in bridging the gap between software engineering and accessibility, and I plan to pursue graduate studies in Human-Computer Interaction (HCI).</p>
 
-        <p>Outside of work, I run. I have sucesfully run two marathons, the most recent one being the <a href="#" class="link">Long Beach Marathon</a>. Now I am training for my first <a href="#" class="link">IRONMAN 70.3</a>, if you have any tips for race day let me know.</p>
+        <p>Outside of work, I run. I have sucesfully run two marathons, the most recent one being the <span class="link">Long Beach Marathon</span>. Now I am training for my first <span class="link">IRONMAN 70.3</span>, if you have any tips for race day let me know.</p>
 
         <p>Check out more below.</p>
       </section>
