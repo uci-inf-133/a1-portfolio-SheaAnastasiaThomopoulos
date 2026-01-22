@@ -36,6 +36,7 @@ body {
   background: #fff;
   transform-origin: center top;
   will-change: transform, margin, border-radius;
+  margin-bottom: -200px;
 }
 
 /* Styles for sections inside the content area */
