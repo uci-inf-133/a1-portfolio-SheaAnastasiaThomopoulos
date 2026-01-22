@@ -1,5 +1,8 @@
 /* CSS file for portfolio! */
+/* This imports a font from Google Fonts - I'm using JetBrains Mono */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;400;600;700&display=swap');
+
+/* :root is where I store all my color variables - this way I can change colors in one place */
 :root {
   --pill-bg: rgba(243, 246, 251, 0.92);
   --panel-bg: rgba(243, 246, 251, 0.88);
@@ -9,35 +12,48 @@
   --shadow: 0 12px 30px rgba(18, 26, 46, 0.16);
   --shadow-soft: 0 6px 16px rgba(18, 26, 46, 0.12);
 }
+
+/* The * selector applies to ALL elements on the page */
 * {
   box-sizing: border-box;
 }
+
+/* Styles for the html element - the whole page */
 html {
   background: #636B2F;
 }
+
+/* Styles for the body element */
 body {
   margin: 0;
   font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
   color: var(--text);
   background: transparent;
 }
+/* This is the main white content area */
 .content {
   padding: 120px 24px 120px 60px;
   background: #fff;
   transform-origin: center top;
   will-change: transform, margin, border-radius;
 }
+
+/* Styles for sections inside the content area */
 .content section {
   height: auto;
   max-width: 640px;
   margin: 0 0 170px 0;
 }
+
+/* Styles for h1 headings inside content */
 .content h1 {
   font-size: 32px;
   font-weight: 400;
   line-height: 1.4;
   margin: 0 0 16px;
 }
+
+/* Styles for h2 headings */
 .content h2 {
   font-size: 20px;
   font-weight: 400;
@@ -45,24 +61,32 @@ body {
   margin: 0 0 28px;
   color: var(--text);
 }
+
+/* Styles for paragraphs */
 .content p {
   font-size: 16px;
   line-height: 1.6;
   margin: 0 0 16px;
   color: var(--text);
 }
+/* This class makes text colored and italic - used for my name */
 .blue-italic {
   color: var(--blue);
   font-style: italic;
 }
+
+/* Styles for links in paragraphs */
 .link {
   color: var(--blue);
   text-decoration: none;
   font-style: italic;
 }
+
+/* :hover is when you move your mouse over it */
 .link:hover {
   text-decoration: underline;
 }
+/* This is the navigation menu pill in the top left corner */
 .pill {
   position: fixed;
   top: 10px;
@@ -82,11 +106,14 @@ body {
   align-items: center;
   gap: 8px;
 }
+/* This is the hidden checkbox that controls the menu */
 .toggle {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
+
+/* Styles for my name/logo in the menu */
 .brand {
   font-weight: 800;
   font-size: 22px;
@@ -95,9 +122,12 @@ body {
   text-decoration: none;
   line-height: 1;
 }
+
 .brand-dot {
   color: var(--text);
 }
+
+/* Styles for the menu list */
 .menu-list {
   list-style: none;
   margin: 0;
@@ -105,6 +135,7 @@ body {
   display: grid;
   gap: 8px;
 }
+/* Styles for the menu button */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -117,16 +148,24 @@ body {
   transition: background 0.15s ease, color 0.15s ease;
   color: var(--text);
 }
+
+/* When you hover over the button */
 .btn:hover {
   background: var(--blue);
   color: #fff;
 }
+
+/* The "Menu" text */
 .btn-menu {
   display: inline;
 }
+
+/* The "Close" text - hidden by default */
 .btn-close {
   display: none;
 }
+
+/* When checkbox is checked, these styles apply */
 .toggle:checked ~ .btn {
   background: transparent;
   color: var(--text);
@@ -137,6 +176,7 @@ body {
 .toggle:checked ~ .btn .btn-close {
   display: inline;
 }
+/* This is the dropdown menu panel - hidden by default */
 .panel {
   position: absolute;
   left: 10px;
@@ -155,25 +195,28 @@ body {
   opacity: 0;
   transition: width 260ms cubic-bezier(.2,.9,.2,1), max-height 260ms ease, opacity 200ms ease, padding 180ms ease;
 }
+
+/* When menu is open (checkbox checked), show the panel */
 .toggle:checked ~ .panel {
   width: 420px;
   max-height: 480px;
   padding: 10px;
   opacity: 1;
 }
+/* Styles for menu items (Intro, Experiences, etc.) */
 .item {
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 6px 6px;
   border-radius: 10px;
-
   text-decoration: none;
   color: var(--text);
-
   font-size: 14px;
   letter-spacing: -0.02em;
 }
+
+/* When you hover over a menu item */
 .item:hover {
   background: var(--blue);
   color: #fff;
@@ -195,52 +238,70 @@ body {
 .pill:has(.toggle:checked) {
   width: 440px;
 }
+/* Experience and Projects sections use a two-column grid */
 .exp-section {
   display: grid;
   grid-template-columns: 120px 1fr;
   gap: 40px;
   margin-top: 180px;
 }
+
+/* The label on the left (like "Experience" or "Projects") */
 .exp-label {
   font-style: italic;
   font-size: 16px;
   color: var(--text);
 }
+
+/* Container for all the experience/project items */
 .exp-content {
   display: flex;
   flex-direction: column;
   gap: 28px;
 }
+
+/* Each individual experience or project item */
 .exp-item {
   border-bottom: 1px solid #e5e7eb;
   padding-bottom: 20px;
 }
+
+/* Last item doesn't need a border */
 .exp-item:last-child {
   border-bottom: none;
 }
+
+/* Company name or project title */
 .exp-company {
   font-size: 16px;
   font-weight: 400;
   color: var(--text);
   margin-bottom: 4px;
 }
+
 .exp-role {
   font-size: 14px;
   color: var(--text);
   margin-bottom: 8px;
 }
+
+/* Date text */
 .exp-date {
   font-size: 12px;
   color: var(--muted);
 }
+/* Project titles are clickable */
 .project-title {
   cursor: pointer;
   transition: color 0.15s ease;
 }
+
+/* When you hover over a project title */
 .project-title:hover {
   color: var(--blue);
   text-decoration: underline;
 }
+/* The modal popup - hidden by default */
 .modal {
   display: none;
   position: fixed;
@@ -252,9 +313,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* When modal is active (shown) */
 .modal.active {
   display: flex;
 }
+
+/* The dark overlay behind the modal */
 .modal-overlay {
   position: absolute;
   top: 0;
@@ -266,6 +331,8 @@ body {
   -webkit-backdrop-filter: blur(4px);
   animation: fadeIn 0.2s ease;
 }
+
+/* The actual modal box with content */
 .modal-content {
   position: relative;
   background: #fff;
@@ -279,6 +346,7 @@ body {
   animation: slideUp 0.3s cubic-bezier(.2,.9,.2,1);
   z-index: 1001;
 }
+/* The X button to close the modal */
 .modal-close {
   position: absolute;
   top: 16px;
@@ -298,41 +366,56 @@ body {
   border-radius: 8px;
   transition: background 0.15s ease, color 0.15s ease;
 }
+
+/* When you hover over close button */
 .modal-close:hover {
   background: var(--blue);
   color: #fff;
 }
+
+/* Project title in modal */
 .modal-title {
   font-size: 24px;
   font-weight: 400;
   margin: 0 0 8px 0;
   color: var(--text);
 }
+
+/* Date in modal */
 .modal-date {
   font-size: 14px;
   color: var(--muted);
   margin-bottom: 24px;
 }
+
+/* Description text in modal */
 .modal-description {
   font-size: 16px;
   line-height: 1.6;
   color: var(--text);
   margin-bottom: 24px;
 }
+
+/* Technologies used */
 .modal-tech {
   font-size: 14px;
   color: var(--muted);
   margin-bottom: 24px;
 }
+
 .modal-tech strong {
   color: var(--text);
   font-weight: 400;
 }
+
+/* Container for links in modal */
 .modal-links {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
 }
+
+/* Links in modal */
 .modal-links a {
   color: var(--blue);
   text-decoration: none;
@@ -340,9 +423,11 @@ body {
   font-size: 14px;
   transition: text-decoration 0.15s ease;
 }
+
 .modal-links a:hover {
   text-decoration: underline;
 }
+/* Animation that fades something in */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -351,6 +436,8 @@ body {
     opacity: 1;
   }
 }
+
+/* Animation that slides something up while fading in */
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -361,27 +448,36 @@ body {
     transform: translateY(0);
   }
 }
+/* Footer section at the bottom */
 .footer {
   background: var(--blue);
   color: #fff;
   padding: 80px 60px;
   min-height: 50vh;
 }
+
+/* Container inside footer to limit width */
 .footer-content {
   max-width: 640px;
   margin: 0 auto;
 }
+
+/* "Contact" heading in footer */
 .footer-heading {
   font-size: 24px;
   font-weight: 400;
   margin: 0 0 40px 0;
   color: #fff;
 }
+
+/* Container for contact items */
 .contact-info {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
+
+/* Each contact item (Email, LinkedIn, etc.) */
 .contact-item {
   display: flex;
   align-items: center;
@@ -389,29 +485,38 @@ body {
   padding-bottom: 16px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+/* Last contact item doesn't need a border */
 .contact-item:last-child {
   border-bottom: none;
 }
+
+/* Label text (like "Email") */
 .contact-label {
   font-size: 16px;
   font-weight: 400;
   min-width: 80px;
   color: #fff;
 }
+
 .contact-value {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
   flex: 1;
 }
+
+/* The arrow icon */
 .contact-icon {
   font-size: 16px;
   opacity: 0.7;
   cursor: pointer;
   color:#fff
 }
+
 .contact-icon:hover {
   opacity: 1;
 }
+/* This is for a badge container - not currently used */
 #badge-container {
   position: fixed;
   left: 0;
@@ -421,11 +526,15 @@ body {
   pointer-events: none;
   z-index: 1;
 }
+
+/* Media query - styles only apply when screen is smaller than 1024px */
 @media (max-width: 1024px) {
   #badge-container {
     display: none;
   }
 }
+
+/* Skip link for accessibility - hidden until you tab to it */
 .skip-link {
   position: absolute;
   left: -999px;
@@ -436,6 +545,8 @@ body {
   border-radius: 8px;
   z-index: 10000;
 }
+
+/* When you focus on it (by pressing Tab), it appears */
 .skip-link:focus {
   left: 10px;
 }

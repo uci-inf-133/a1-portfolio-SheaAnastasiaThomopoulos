@@ -7,30 +7,32 @@ EMAIL: sthomopo@uci.edu
 -->
 
   <head>
-    <meta charset="utf-8">
+    <!-- The head section has info about the page that doesn't show on screen -->
+    <meta charset="utf-8"> <!-- This makes sure special characters display correctly -->
     <meta name="author" content="Shea Thomopoulos">
     <meta name="description" content="My personal portfolio website showcasing my experiences and projects.">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This makes the page work on mobile devices -->
     <title>Shea Thomopoulos' Portfolio</title>
     <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
+    <!-- This skip link helps people using screen readers jump to main content -->
     <a class="skip-link" href="#main">Skip to main content</a>
+    
+    <!-- This is the navigation menu at the top left -->
     <nav class="pill" aria-label="Site menu">
+      <!-- This checkbox is hidden but controls if the menu is open or closed -->
       <input class="toggle" type="checkbox" id="menuToggle" aria-label="Toggle site menu">
-
-      <a class="brand" href="#" aria-label="Home">
-        ST.
-      </a>
-
+      <!-- This is my name/logo that links to the top of the page -->
+      <a class="brand" href="#" aria-label="Home">ST.</a>
       <label class="btn" for="menuToggle">
         <span class="btn-menu">Menu</span>
         <span class="btn-close">Close</span>
       </label>
-
       <div class="panel" aria-label="Menu links">
         <ul class="menu-list">
+          <!-- These are links to different sections of the page -->
           <li><a class="item" href="#intro">Intro</a></li>
           <li><a class="item" href="#experiences">Experiences</a></li>
           <li><a class="item" href="#projects">Projects</a></li>
@@ -38,84 +40,76 @@ EMAIL: sthomopo@uci.edu
         </ul>
       </div>
     </nav>
-
+    <!-- Main content area with all the sections -->
     <main id="main" class="content">
       <section id="intro">
         <h1><span class="blue-italic">Shea Thomopoulos</span>'s Portfolio</h1>        
-        <p>I'm an undergraduate Computer Science student at UC Irvine, focusing on Intelligent Systems. Growing up with dyslexia showed me how powerful digital tools can be for people with disabilities but only when they're designed thoughtfully. I'm interested in bridging the gap between software engineering and accessibility, and I plan to pursue graduate studies in Human-Computer Interaction (HCI).</p>
-
+        <p>I'm an undergraduate <span class="link">Computer Science</span> student at <span class="link">UC Irvine</span>, focusing on Intelligent Systems. Growing up with dyslexia showed me how powerful digital tools can be for people with disabilities but only when they're designed thoughtfully. I'm interested in bridging the gap between <span class="link">software engineering</span> and <span class="link">accessibility</span>, and I plan to pursue graduate studies in <span class="link">Human-Computer Interaction (HCI)</span>.</p>
         <p>Outside of work, I run. I have sucesfully run two marathons, the most recent one being the <span class="link">Long Beach Marathon</span>. Now I am training for my first <span class="link">IRONMAN 70.3</span>, if you have any tips for race day let me know.</p>
-
         <p>Check out more below.</p>
       </section>
-
+      <!-- Experience section listing all my work experience -->
       <section id="experiences" class="exp-section">
         <h2 class="exp-label">Experience</h2>
+        <!-- div is a container to group things together -->
         <div class="exp-content">
+          <!-- Each exp-item is one job/experience -->
           <div class="exp-item">
             <div class="exp-company">UI/UX and Web Developer - UC Irvine OAI Website</div>
             <div class="exp-date">10/2025 - Present</div>
           </div>
-
           <div class="exp-item">
             <div class="exp-company">Researcher and Designer - INSite Lab (UC Irvine)</div>
             <div class="exp-date">07/2025 - Present</div>
           </div>
-
           <div class="exp-item">
             <div class="exp-company">Lab Assistant - ICS 31 (Intro to Programming, Python)</div>
             <div class="exp-date">06/2025 - Present</div>
           </div>
-
           <div class="exp-item">
             <div class="exp-company">Corporate Outreach and Organizer — Hack@UCI</div>
             <div class="exp-date">04/2025 - Present</div>
           </div>
-
           <div class="exp-item">
             <div class="exp-company">Operations Crew Lead - Bren Event Center</div>
             <div class="exp-date">11/2023 - Present</div>
           </div>
-
           <div class="exp-item">
             <div class="exp-company">Event Coordinator and Content Developer - Girl's Coding Weekend</div>
             <div class="exp-date">11/2022 - 06/2023</div>
           </div>
-
           <div class="exp-item">
             <div class="exp-company">Python Coding Teacher - International School of Lausanne</div>
             <div class="exp-date">11/2021 - 06/2022</div>
           </div>
         </div>
       </section>
-
+      <!-- Projects section - these are clickable!! -->
       <section id="projects" class="exp-section">
         <h2 class="exp-label">Projects</h2>
         <div class="exp-content">
+          <!-- data-project tells JavaScript which project to show when clicked -->
           <div class="exp-item">
             <div class="exp-company project-title" data-project="0">DFS Visualizer</div>
             <div class="exp-date">June 21, 2025</div>
           </div>
-
           <div class="exp-item">
             <div class="exp-company project-title" data-project="1">Racing Agents (CarRacing-v3)</div>
             <div class="exp-date">December 1, 2025</div>
           </div>
-
           <div class="exp-item">
             <div class="exp-company project-title" data-project="2">WebReg Redesign</div>
             <div class="exp-date">December 1, 2025</div>
           </div>
         </div>
       </section>
-
-      
     </main>
-
+    <!-- Footer section with contact information -->
     <footer id="contact" class="footer">
       <div class="footer-content">
         <h2 class="footer-heading">Contact</h2>
         <div class="contact-info">
+          <!-- These are links to my contact info -->
           <a href="mailto:sheathomopoulos@outlook.com" class="contact-item">
             <span class="contact-label">Email</span>
             <span class="contact-icon">↗</span>
@@ -124,17 +118,21 @@ EMAIL: sthomopo@uci.edu
             <span class="contact-label">LinkedIn</span>
             <span class="contact-icon">↗</span>
           </a>
-          <a href="resume2025.pdf" class="contact-item" target="_blank">
+          <a href="resume2025.pdf" class="contact-item" target="_blank"> <!-- target="_blank" opens the link in a new tab -->
             <span class="contact-label">Resume</span>
             <span class="contact-icon">↗</span>
           </a>
         </div>
       </div>
     </footer>
+    <!-- This is the popup modal that shows project details when you click a project -->
     <div id="projectModal" class="modal">
+      <!-- The overlay is the dark background behind the modal -->
       <div class="modal-overlay"></div>
+      <!-- This is the actual modal box with the content -->
       <div class="modal-content">
         <button class="modal-close" aria-label="Close modal">×</button>
+        <!-- These divs will be filled in by JavaScript when a project is clicked -->
         <h2 class="modal-title" id="modalTitle">Project details</h2>
         <div class="modal-date" id="modalDate"></div>
         <div class="modal-description" id="modalDescription"></div>
@@ -143,6 +141,7 @@ EMAIL: sthomopo@uci.edu
       </div>
     </div>
     <a href="https://validator.w3.org/check?uri=referer">W3C validator</a>
+    <!-- This links to our JavaScript file for interactive featuresssss -->
     <script src="script.js"></script>
   </body>
 </html>
